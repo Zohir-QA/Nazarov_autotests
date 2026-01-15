@@ -21,4 +21,5 @@ def setup_and_teardown():
     scope=function – фикстура выполнится 1 раз каждой функции с тестом
     scope=modul – фикстура выполнится 1 раз для всего модуля с тестами
     scope=session - фикстура выполнится 1 раз для всей сессии с запуском тестов
+    pytest test_auth.py | tee report.txt - как сделать отчет 
     """
