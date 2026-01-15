@@ -11,7 +11,7 @@ import pytest
 def test_multiplication_positive(a, b, expected_value):
     assert a * b == expected_value, f"{a}*{b} получилось {expected_value}"
 
-@pytest.mark.division
+@pytest.mark.division # - Тесты для операции деления
 @pytest.mark.parametrize("a, b, expected_value", [
     (6, 3, 2),
     (10, 2, 5),
