@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    font-family: Cursive;
+    text-align: center;
+}
+.img_class {
+    color: #f00;
+    font-size: 24px;
+}
+#my_link {
+    font-size 10px;
+}
