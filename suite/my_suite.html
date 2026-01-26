@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="my_style.css" rel="stylesheet"></link>
+    <title>Moy sayt</title>
+    <style>
+        th {
+            border: 1px solid black;
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+
+        }
+        tr {
+            background-color: #ff0000
+        }
+    </style>
+</head>
+<body>
+    <h1>Dobro pozhalovat na moy sayt</h1>
+    <p style="font-size: 200%">Eto primer prostoy HTML-stranitsy. <span style="color: red;">s vydeleniyem teksta tsvetom</span></p>
+    <p>Упорядочный список</p>
+    <ol style="margin: 30px: padding-left: 10px">
+        <li>Первый шаг</li>
+        <li>Второй шаг</li>
+        <li>Третий шаг</li>
+    </ol>
+    <p>Не упорядочный список</p>
+    <ul style="list-style-type: square; list-style-position: outside;">
+        <li>Первый шаг</li>
+        <li>Второй шаг</li>
+        <li>Третий шаг</li>
+    </ul>
+    <p>Список описания</p>
+    <dl>
+        <dt>HTML</dt> <!-- термин -->
+        <dd>Язык разметки для создания веб-страниц.</dd> <!-- описание -->
+        <dt>CSS</dt>
+        <dd>Язык стилей для оформления веб-страниц.</dd>
+    </dl>
+    <p>Таблица</p>
+    <table style="border: 1px solid black; border-collapse: collapse;" > <!-- контейнер для таблицы -->
+        <caption>Моя таблица</caption>
+        <thead>
+            <tr> <!-- строка таблицы -->
+                <th>Название</th> <!-- ячейка заголовками -->
+                <th>Цена</th>
+                <th>Количество</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Яблоки</td> <!-- ячейка таблица содержит данные -->
+                <td>50 ₽</td>
+                <td>10 кг</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- для итоговой информации -->
+            <tr>
+                <td>Бананы</td>
+                <td>80 ₽</td>
+                <td>5 кг</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Пример формы регистрации</p>
+    <!--
+     Основные аттрибуты формы
+     action -> позволяет указать ссылку на адрес куда будут отправлены данные
+     method -> позволяет указать api метод для отправки даннных
+     name -> позволяет указывать название формы, которое будет использоваться для отправки даннных
+     required -> обозначает то что ввод является обязательным
+     type -> обозначает тип элемента, по умолчанию text
+     value -> значение по умолчанию в полях
+     checked -> аттрибут который позволяет выделить по умолчанию какой-то элемент (флаг или радио баттон)
+     disabled -> отключение конкретного поля
+     size -> размер элемента
+     maxlength (minlength) - максимальное и минимальное кол-во символов в поле
+
+     text, email, tel, url, password, number, search, datetime-local, date, mounth, year, week, time, range, radio,
+     checkbox, color, file, submit, reset, button, hidden
+     -->
+    <form>
+        <div>
+        <label>Имя пользователя</label>
+        <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+        <label>Электронная почта</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <label>Пароль</label>
+        <input type="password" id="password" name="password" required>
+        <div>
+            <label>Дата рождения</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <label>Загрузить свои аватар</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+<!--        <textarea></textarea>-->
+<!--        <select></select>-->
+        <button type="submit">Зарегистрироваться</button>
+        <button type="reset">Сброс полей</button>
+    </form>
+    <a href="https://example.com"  id="my_link">Pereyti po ssylke</a>
+    <div class="img_class">
+        <h2>Welcome to my website</h2>
+        <img src="https://img.freepik.com/premium-photo/full-shot-girl-learning-math-school_23-2150470852.jpg" alt="Моем морковку" height="700" width="1000"></img>
+    </div>
+</body>
+</html>

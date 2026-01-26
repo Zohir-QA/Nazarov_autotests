@@ -21,3 +21,12 @@ p {
     text-align: center;
     padding: 20px; /* Внутренние отступы */
 }
+
+dl {
+    font-family: Cursive;
+    color: #333333;
+}
+
+dd {
+    padding: 10px;
+}
