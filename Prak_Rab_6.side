@@ -1,0 +1,332 @@
+{
+  "id": "263cef95-5b42-4e11-8800-a6271bcf278a",
+  "version": "2.0",
+  "name": "Prak_Rab_6",
+  "url": "https://www.ozon.ru/",
+  "tests": [{
+    "id": "80505bce-c002-4425-89ba-d6b1a7265138",
+    "name": "Test_1",
+    "commands": [{
+      "id": "56b9d8a7-ff19-4d82-a162-50cf83d73ff5",
+      "comment": "",
+      "command": "open",
+      "target": "https://journal.top-academy.ru/ru/auth/login/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae149134-06ad-4349-8e45-3ec7a2911ef3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddeb9ca4-0fa8-46b4-bae1-5e3192b5b906",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "n"
+    }, {
+      "id": "abb2d1af-34d3-4ee7-a7af-ffab94163068",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "6a60abd9-8264-4990-aa2a-1bace78bde2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "4d8a26c3-7adc-47d2-99b9-516b4737579a",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "."
+    }, {
+      "id": "7c5c37dc-15d4-4583-9cc8-7eb84cdca0ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "582bf714-9dd9-4ce2-aa1e-c119649f672d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-action:nth-child(3)",
+      "targets": [
+        ["css=.login-action:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1c36a1f-0028-4cb5-9e97-4b7b0baa333b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "."
+    }, {
+      "id": "54d96e32-acd8-4ad7-92ae-23a3cf2fcbc0",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7ae4ca0-bab3-49a6-b1f6-6a00e616e49b",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nazar_nf14"
+    }, {
+      "id": "455e1e24-67ed-401d-8732-0ef7d33f77ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "QJ7R449b"
+    }, {
+      "id": "7c167ea4-a488-4ad8-8e53-7bbc8eea1561",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-action:nth-child(3)",
+      "targets": [
+        ["css=.login-action:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tab[@id='1']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "49785b7d-4d5c-4c02-a7da-56e23c6910a1",
+    "name": "Test_2",
+    "commands": [{
+      "id": "c18405b8-9f93-4051-852e-76060b37c5c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c7913e5-35ff-425b-8dae-8f4b6c9d3128",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69477d03-4a81-46c6-b813-c94f0a769560",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Товары за 1₽",
+      "targets": [
+        ["linkText=Товары за 1₽", "linkText"],
+        ["css=.uw_h8a:nth-child(7) > .q4b1_3_1-a", "css:finder"],
+        ["xpath=//a[contains(text(),'Товары за 1₽')]", "xpath:link"],
+        ["xpath=//div[@id='layoutPage']/div/div/div/header/div[2]/div/div/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ozon.ru/highlight/ozon-bank-1332387/')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Товары за 1₽')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1521",
+      "windowTimeout": 2000
+    }, {
+      "id": "485638a4-671f-47ac-9365-81061b733b73",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1521}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "751da146-a93c-4e4c-a9f6-23bf637ccacd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Электроника",
+      "targets": [
+        ["linkText=Электроника", "linkText"],
+        ["css=.uw_h8a:nth-child(5) > .q4b1_3_1-a", "css:finder"],
+        ["xpath=//a[contains(text(),'Электроника')]", "xpath:link"],
+        ["xpath=//div[@id='layoutPage']/div/header/div[2]/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/category/elektronika-15500/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Электроника')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5b7eb5f-5bd7-4d22-8fdb-629ee84f1625",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Электроника",
+      "targets": [
+        ["linkText=Электроника", "linkText"],
+        ["css=.uw_h8a:nth-child(5) > .q4b1_3_1-a", "css:finder"],
+        ["xpath=//a[contains(text(),'Электроника')]", "xpath:link"],
+        ["xpath=//div[@id='layoutPage']/div/header/div[2]/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/category/elektronika-15500/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Электроника')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cd77df9-e7e0-4f67-8ef0-724782133569",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.tsBody400Small > .ga5_3_11-a2",
+      "targets": [
+        ["css=.tsBody400Small > .ga5_3_11-a2", "css:finder"],
+        ["xpath=//div[@id='layoutPage']/div/header/div[2]/div[2]/div/div/div/div/div/div[3]/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bd95f6c-35dd-47a1-80c7-e99d583c934c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//h1[@class='qb61_3_14-a1']",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "7f92a77e-8ede-410a-9310-4fbeec4a438c",
+    "name": "Test_3",
+    "commands": [{
+      "id": "696a2626-415a-4552-8ca5-d01a8563d439",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8842293f-4f8f-4a6b-a7dd-c197a678d112",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.tsBody400Small > .ga5_3_11-a2",
+      "targets": [
+        ["css=.tsBody400Small > .ga5_3_11-a2", "css:finder"],
+        ["xpath=//div[@id='layoutPage']/div/div/div/header/div[2]/div[2]/div/div/div/div/div/div[3]/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae9f17b0-e002-46a8-850b-3669e165300e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сертификаты",
+      "targets": [
+        ["linkText=Сертификаты", "linkText"],
+        ["css=.uw_h8a:nth-child(8) > .q4b1_3_1-a", "css:finder"],
+        ["xpath=//a[contains(text(),'Сертификаты')]", "xpath:link"],
+        ["xpath=//div[@id='layoutPage']/div/div/div/header/div[2]/div/div/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ozon.ru/landing/giftcertificates/?perehod=headerdesk')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Сертификаты')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3789",
+      "windowTimeout": 2000
+    }, {
+      "id": "1f556aab-2a7d-4481-8355-dc9c6abe4f72",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3789}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9589d191-ce7b-42cb-8ed7-c3bb89759bb5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//img[@src=\"https://ir-3.ozone.ru/s3/multimedia-1-m/7141876282.jpg\"][1]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "1abb6366-c817-4410-905d-e1f18872df47",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://journal.top-academy.ru/ru/auth/login/index", "https://www.ozon.ru/"],
+  "plugins": []
+}
