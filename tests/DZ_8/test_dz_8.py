@@ -29,3 +29,8 @@ def test_dz_8(close_session):
 
     books = driver.find_elements(By.XPATH, '//a[@data-testid="art__title"]')
 
+    print(f"\nНайдено книг на странице: {len(books)}")
+    print("Названия первых 5 книг:")
+
+    for i, title in enumerate(books[:5], start=1):
+        print(f"{i}. {title.text}")
