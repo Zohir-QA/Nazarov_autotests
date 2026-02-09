@@ -1,25 +1,11 @@
 import pytest
+from selenium import webdriver
 
 @pytest.fixture()
-def get_data():
-    return {"a": 2,
-            "b": 5}
+def driver():
+    chrome = webdriver.Chrome()
+    chrome.maximize_window()
+    chrome.implicitly_wait(10)
 
-@pytest.fixture(scope="session")
-def setup_and_teardown():
-    print("Подготовка соединения")
-    resource = {
-        "connect": True
-    }
-    yield resource
-    print("Разрыв соединения")
-    resource["connect"] = False
-
-    """
-    SCOPE – позволяет управлять тем, когда текстура должна управляться 
-    
-    scope=function – фикстура выполнится 1 раз каждой функции с тестом
-    scope=modul – фикстура выполнится 1 раз для всего модуля с тестами
-    scope=session - фикстура выполнится 1 раз для всей сессии с запуском тестов
-    pytest test_auth.py | tee report.txt - как сделать отчет 
-    """
+    yield chrome # закрывает, после него не чего не писать
+    chrome.quit()
