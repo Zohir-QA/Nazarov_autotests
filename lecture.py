@@ -107,3 +107,6 @@
 pip install -r .\requirements.txt
 Напиши скрипт для скролла страницы, я использую selenium web driver
 """
+"""
+try
+"""
