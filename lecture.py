@@ -113,5 +113,32 @@ pip install -r .\requirements.txt
 независимость
 скорость
 логирование и отладка
+pip install -r .\requirements.txt
+"""
+"""
+POWER SHELL
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Y
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop install allure
+scoop install git
+java --version - проверка какая и есть ли она
+git --version
+scoop bucket add java - если не скачана
+scoop install openjdk21
+"""
+"""
+на стрелке зеленой нажимаем правой кнопкои и нажимаем на модифити ран
+адинотал аргумент водим что снизу
+--alluredir=allure_result - 
 
+в пуске водим "изменение системных переменных среды" и кликаем 
+кликаем с низу на переменные среды
+кликаем два раза на Path
+кликаем снизу и вставляем C:\Users\admin\scoop\apps\allure\current\bin
+водим в повер шел $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+allure --version
+"""
+"""
+allure serve allure_result
 """
