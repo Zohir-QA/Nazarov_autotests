@@ -136,9 +136,22 @@ scoop install openjdk21
 кликаем с низу на переменные среды
 кликаем два раза на Path
 кликаем снизу и вставляем C:\Users\admin\scoop\apps\allure\current\bin
+C:\Users\student\scoop\apps\allure\current\bin
 водим в повер шел $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 allure --version
 """
 """
 allure serve allure_result
+"""
+"""
+установка java
+scoop bucket add java
+scoop install openjdk21
+
+tust it, jira
+что тестирую, как тестирую 
+https://perm.welcome-dostavka.ru/restaurants/mama-pizza-perm
+http://papapizza59.ru/
+http://xn--d1aidglabi1a0h.xn--p1ai/contacts
+http://papapizza59.ru/2_pizzy ----
 """
