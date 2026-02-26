@@ -155,3 +155,32 @@ http://papapizza59.ru/
 http://xn--d1aidglabi1a0h.xn--p1ai/contacts
 http://papapizza59.ru/2_pizzy ----
 """
+"""
+в диске с заходив програм фаил
+от имени адменестрации
+в програм файлс устанавливаем
+Tvv aA@662203
+https://download.oracle.com/java/21/archive/jdk-21.0.9_windows-x64_bin.exe
+https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
+в начале поставить все галочки
+https://github.com/git-for-windows/git/releases/download/v2.53.0.windows.1/Git-2.53.0-64-bit.exe
+https://www.jenkins.io/download/
+когда второй раз просят указываем как снизу
+C:\Program Files\Java\jdk-21\
+http://localhost:8080
+
+создаем в углу
+называем run tests
+нажимаем
+Создать задачу со свободной конфигурацией
+скролим Управление исходным кодом
+нажимаем на git
+Repository URL вставляем https://github.com/Zohir-QA/Nazarov_autotests.git
+скролим до Шаги сборки
+вставляем 
+python -m venv venv
+venv/Scripts/activate
+python -m pip install -r requirements.txt
+pytest tests/DZ_9/yandex_tests/yandex_tests_1.py
+
+"""
