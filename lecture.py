@@ -191,4 +191,11 @@ pytest tests/DZ_9/yandex_tests/yandex_tests_1.py
 C:\Program Files\Python\Scripts\
 также в снизу в системные переменые добавить
 
+
+
+python -m venv venv
+call venv/Scripts/activate
+pip install -r requirements.txt
+set PYTHONIOENCODING=utf-8
+pytest tests/DZ_9/yandex_tests/yandex_tests.py
 """
