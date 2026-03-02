@@ -169,6 +169,8 @@ https://www.jenkins.io/download/
 C:\Program Files\Java\jdk-21\
 http://localhost:8080
 
+если не открывается пишем в пуск службы и остонавливаем дженкинс и запускаем
+
 создаем в углу
 называем run tests
 нажимаем
@@ -177,10 +179,16 @@ http://localhost:8080
 нажимаем на git
 Repository URL вставляем https://github.com/Zohir-QA/Nazarov_autotests.git
 скролим до Шаги сборки
+нажимаем Выполнить команду Windows
 вставляем 
 python -m venv venv
 venv/Scripts/activate
 python -m pip install -r requirements.txt
 pytest tests/DZ_9/yandex_tests/yandex_tests_1.py
+
+меняем мастер на main
+если что в переменыхз окружении указываем путь C:\Program Files\Python\
+C:\Program Files\Python\Scripts\
+также в снизу в системные переменые добавить
 
 """
