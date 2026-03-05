@@ -1,6 +1,8 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+import allure
+import requests
 
 @pytest.fixture()
 def driver():
