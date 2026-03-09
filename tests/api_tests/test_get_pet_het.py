@@ -14,6 +14,3 @@ def test_get_biospecimen():
             pass
     print(response.status_code)
     assert response.status_code == 200
-    # for i in biospecimen:
-    #
-    # print(biospecimen)

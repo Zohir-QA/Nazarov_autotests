@@ -2,9 +2,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 import allure
-def test_authorization(driver):
+import pytest
+import requests
+
+@allure.id("004")
+@allure.label("Journal top-academy")
+@allure.title("Journal проверка авторизации")
+@allure.description("Тест проверяет авторизацию на положительный вариант и негативный")
+def tests_authorization(driver):
     with allure.step("Открываем сайт journal"):
         driver.get("https://journal.top-academy.ru/ru/auth/login/index")
+
     with allure.step("Кликаем поле ввода логин и водим"):
         username = driver.find_element(By.XPATH, '//input[@id="username"]')
         username.click()

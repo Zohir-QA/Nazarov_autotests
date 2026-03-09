@@ -1,7 +1,6 @@
 import allure
 import pytest
 import requests
-a = 2
 
 @allure.id("1")
 @allure.feature("NASA API")

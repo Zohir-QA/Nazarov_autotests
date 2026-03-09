@@ -3,8 +3,15 @@ import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
+import pytest
+import requests
 
-def test_yandex(driver):
+@allure.id("002")
+@allure.label("Yandex")
+@allure.title("Yandex проверка карточки товара")
+@allure.description("Тест проверяет весь путь до карточка товара и открытие самой карточки товара")
+
+def tests_002(driver):
     with allure.step("Открываем сайт яндекс маркет"):
         driver.get("https://market.yandex.ru/")
 

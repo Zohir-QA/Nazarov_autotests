@@ -184,7 +184,7 @@ Repository URL вставляем https://github.com/Zohir-QA/Nazarov_autotests.
 python -m venv venv
 venv/Scripts/activate
 python -m pip install -r requirements.txt
-pytest tests/DZ_9/yandex_tests/yandex_tests_1.py
+pytest tests/DZ_9/yandex_tests/tests_yandex_checking_product_card.py
 
 меняем мастер на main
 если что в переменыхз окружении указываем путь C:\Program Files\Python\
@@ -197,5 +197,5 @@ python -m venv venv
 call venv/Scripts/activate
 pip install -r requirements.txt
 set PYTHONIOENCODING=utf-8
-pytest tests/DZ_9/yandex_tests/yandex_tests.py
+pytest tests/DZ_9/yandex_tests/tests_yandex_changing_he_image_when_changing_countries.py
 """
