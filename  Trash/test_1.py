@@ -24,10 +24,10 @@ def test_summ_numbers(get_data):
 # driver = webdriver.Chrome()
 # driver.get("https://www.google.com/")
 
-@pytest.fixture(scope="function")
-def driver():
-    driver = webdriver.Chrome()
-    return driver
+# @pytest.fixture(scope="function")
+# def driver():
+#     driver = webdriver.Chrome()
+#     return driver
 
 @pytest.fixture(scope="function")
 
