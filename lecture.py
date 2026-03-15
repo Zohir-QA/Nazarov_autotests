@@ -135,7 +135,8 @@ scoop install openjdk21
 в пуске водим "изменение системных переменных среды" и кликаем 
 кликаем с низу на переменные среды
 кликаем два раза на Path
-кликаем снизу и вставляем C:\Users\admin\scoop\apps\allure\current\bin
+кликаем снизу и вставляем C:\Users\admin\scoop\apps\allure\current\bin  -------
+C:\Users\zohir\scoop\apps\scoop\current\bin ?
 C:\Users\student\scoop\apps\allure\current\bin
 водим в повер шел $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 allure --version
