@@ -212,5 +212,6 @@ pytest tests/DZ_9/yandex_tests/tests_yandex_changing_he_image_when_changing_coun
 что за проект - титаульноая - имя название курса
 ручное тестирование что было проведено сколько тестк кейсов и сколько проведено
 3 при написании что использовалось какой патерн очтен виде скриншота 
-
+https://github.com/DmitriiPV73/Avito-job-testing
+https://github.com/Irina-Mos/Mosunova_graduate_work
 """
