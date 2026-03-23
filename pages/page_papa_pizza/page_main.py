@@ -1,34 +1,49 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
-
+from locators.main_page_locators import MainPageLocators
 
 class LoginPage(BasePage):
-    URL = "http://papapizza59.ru/"
-    MODAL_WINDOW = (By.XPATH, '//a[@class="popup-modal-dismiss"]')
-    USLOVIYA_DOSTAVKI = (By.XPATH, '//a[@href="http://papapizza59.ru/dostavka"]')
-    AKTSII = (By.XPATH, '//a[@href="http://papapizza59.ru/nashi_akcii"]')
-    FIRST_PRODUCT_LINK = (By.XPATH, '//div[@class="_1ENFO"]')
-    TITLE_ELEMENT = (By.XPATH, '//h1[@data-additional-zone="title"]')
+    # URL = "http://papapizza59.ru/"
+    # MODAL_WINDOW = (By.XPATH, '//a[@class="popup-modal-dismiss"]')
+    # USLOVIYA_DOSTAVKI = (By.XPATH, '//a[text() = "Условия доставки"and not(@rel="nofollow")]')
+    # AKTSII = (By.XPATH, '//a[@href="http://papapizza59.ru/nashi_akcii" and not(@rel="nofollow")]')
+    # OPLATA = (By.XPATH, '//div[contains(@class, "top-links")]//a[@href="http://papapizza59.ru/oplata"]')
+    # NASHI_AKTSII = (By.XPATH, '//h1[text() = "Наши акции"]')
+    # DOSTAVKA = (By.XPATH, '//h1[text() = "Доставка"]')
+    # ZAGOLOVOK_OPLATY = (By.XPATH, '//h1[text() = "Оплата"]')
 
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+        self.locators = MainPageLocators
 
     def click_modal_window(self):
-        self.click(self.MODAL_WINDOW)
+        self.click(self.locators.MODAL_WINDOW)
 
     def open(self):
-        self.driver.get(self.URL)
+        self.driver.get(self.locators.URL)
         return self
 
-    def click_aktsii(self):
-        self.click(self.AKTSII)
+    def click_stock(self):
+        self.click(self.locators.STOCK)
 
-    def click_usloviya_dostavki(self):
-        self.click(self.USLOVIYA_DOSTAVKI)
+    def click_delivery_terms(self):
+        self.click(self.locators.DELIVERY_TERMS)
 
-    def click_first_product_link(self):
-        self.click(self.SMARTPHONES)
+    def click_payment(self):
+        self.click(self.locators.PAYMENT)
 
-    def get_text(self, locator):
-        return self.driver.find_element(locator).text
+    def wait_our_promotions(self):
+        return self.wait_element(self.locators.OUR_PROMOTIONS)
+
+    def wait_delivery(self):
+        return self.wait_element(self.locators.DELIVERY)
+
+    def wait_payment_header(self):
+        return self.wait_element(self.locators.PAYMENT_HEADER)
+
+    def click_pizza_button(self):
+        self.click(self.locators.PIZZA_BUTTON)
+
+    def wait_pizza_header(self):
+        return self.wait_element(self.locators.PIZZA_HEADER)

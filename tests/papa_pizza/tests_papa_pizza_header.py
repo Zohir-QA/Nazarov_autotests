@@ -10,7 +10,8 @@ from pages.page_papa_pizza.page_main import LoginPage
 @allure.id("006")
 @allure.label("Papa pizza")
 @allure.title("Papa pizza проверка шапки")
-@allure.description("Тест проверяет весь путь до карточка товара и открытие самой карточки товара")
+@allure.description("Тест проверяет что все кнопки нажимаются и перекидывают во вкладки в шапке")
+@pytest.mark.papa_pizza
 
 def tests_006(driver):
     login = LoginPage(driver)
@@ -21,7 +22,19 @@ def tests_006(driver):
         login.click_modal_window()
 
     with allure.step('Кликнуть на кнопку "Акции"'):
-        login.click_aktsii()
+        login.click_stock()
+
+    with allure.step('Проверяем что вкладке "Акции" успешно открыта'):
+        assert login.wait_our_promotions(), "ОШИБКА не перешел по вкладке акции"
 
     with allure.step('Кликнуть на кнопку "Условия доставки"'):
-        login.click_usloviya_dostavki()
+        login.click_delivery_terms()
+
+    with allure.step('Проверяем что вкладке "Условия доставки" успешно открыта'):
+        assert login.wait_delivery(), "ОШИБКА не перешел по вкладке условия доставки"
+
+    with allure.step('Кликнуть на кнопку "Оплата"'):
+        login.click_payment()
+
+    with allure.step('Проверяем что вкладке "Оплата" успешно открыта'):
+        assert login.wait_payment_header(), "ОШИБКА не перешел по вкладке оплата"

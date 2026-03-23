@@ -29,3 +29,4 @@ class LoginPage(BasePage):
 
     def check_enter_text(self):
         return self.driver.find_element("id", "welcome_text").text
+
