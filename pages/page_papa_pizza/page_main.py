@@ -42,8 +42,20 @@ class LoginPage(BasePage):
     def wait_payment_header(self):
         return self.wait_element(self.locators.PAYMENT_HEADER)
 
-    def click_pizza_button(self):
-        self.click(self.locators.PIZZA_BUTTON)
+    def click_pizza_button_navbar(self):
+        self.click(self.locators.PIZZA_BUTTON_NAVBAR)
 
     def wait_pizza_header(self):
         return self.wait_element(self.locators.PIZZA_HEADER)
+
+    def click_main_image(self):
+        self.click(self.locators.MAIN_IMAGE)
+
+    def wait_main_title(self):
+        return self.wait_element(self.locators.MAIN_TITLE)
+
+    def click_drinks_button_navbar(self):
+        self.click(self.locators.DRINKS_BUTTON_NAVBAR)
+
+    def wait_drinks_header(self):
+        return self.wait_element(self.locators.DRINKS_HEADER)
