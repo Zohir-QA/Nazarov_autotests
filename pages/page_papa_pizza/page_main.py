@@ -59,3 +59,4 @@ class LoginPage(BasePage):
 
     def wait_drinks_header(self):
         return self.wait_element(self.locators.DRINKS_HEADER)
+

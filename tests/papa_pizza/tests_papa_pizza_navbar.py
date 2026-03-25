@@ -34,3 +34,4 @@ def tests_007(driver):
         assert login.wait_drinks_header(), "ОШИБКА не перешел по вкладке напитки"
 
 
+

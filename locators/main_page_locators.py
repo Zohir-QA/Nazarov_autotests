@@ -15,3 +15,4 @@ class MainPageLocators:
     MAIN_TITLE = (By.XPATH, '//h1[@class="home_h1"]') # Заголовок на главной
     DRINKS_BUTTON_NAVBAR = (By.XPATH, '//a[@href="http://papapizza59.ru/napitki/" and not(@rel="nofollow") and not(@class="list-group-item")]') # Категория напитки
     DRINKS_HEADER = (By.XPATH, '//h1 [text()="Напитки"]') # Заголовок на вкладке напитки
+
