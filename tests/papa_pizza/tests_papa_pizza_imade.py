@@ -33,3 +33,4 @@ def tests_007(driver):
     with allure.step('Проверяем что мы на начальной странице'):
         assert login.wait_main_title(), "ОШИБКА не перешел на начальную страницу"
 
+

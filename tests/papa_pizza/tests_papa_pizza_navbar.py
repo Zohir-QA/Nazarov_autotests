@@ -33,3 +33,4 @@ def tests_007(driver):
     with allure.step('Проверяем что мы во вкладке "Напитки"'):
         assert login.wait_drinks_header(), "ОШИБКА не перешел по вкладке напитки"
 
+
